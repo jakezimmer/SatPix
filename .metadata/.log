@@ -1,0 +1,362 @@
+!SESSION 2015-10-13 14:27:44.763 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/Nyaxoffon/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -data /Users/Nyaxoffon/Sites/SatPix -product org.eclipse.epp.package.java.product -keyring /Users/Nyaxoffon/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.mylyn.git.core 4 0 2015-10-13 14:27:46.554
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; singleton:="true"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.git.ui 4 0 2015-10-13 14:27:46.556
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.ui [271]
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core
+    -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; singleton:="true"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.core 4 0 2015-10-13 14:27:46.571
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.core [448]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.mylyn.ui 4 0 2015-10-13 14:27:46.574
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.mylyn.ui [452]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.egit.core"; version="4.1.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.mylyn.ui,  org.eclipse.egit.gitflow.test"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-10-13 14:27:46.577
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [453]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.egit.core"; version="4.1.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.mylyn.ui,  org.eclipse.egit.gitflow.test"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit 4 0 2015-10-13 14:27:46.581
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit [471]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit.archive 4 0 2015-10-13 14:27:46.584
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.archive [472]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit.http.apache 4 0 2015-10-13 14:27:46.592
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.http.apache [526]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.nls; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.nls; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2015-10-13 14:27:46.594
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [527]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2015-10-13 14:27:51.382
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-10-13 14:28:50.886 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Nyaxoffon/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/Nyaxoffon/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.mylyn.git.core 4 0 2015-10-13 14:28:52.254
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.core [270]
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; singleton:="true"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.git.ui 4 0 2015-10-13 14:28:52.255
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.ui [271]
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core
+    -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; singleton:="true"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.core 4 0 2015-10-13 14:28:52.268
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.core [448]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.mylyn.ui 4 0 2015-10-13 14:28:52.270
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.mylyn.ui [452]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.egit.core"; version="4.1.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.mylyn.ui,  org.eclipse.egit.gitflow.test"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-10-13 14:28:52.273
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [453]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.egit.core"; version="4.1.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.mylyn.ui,  org.eclipse.egit.gitflow.test"
+       org.eclipse.egit.core [448]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+           -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+              org.eclipse.jgit [471]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit 4 0 2015-10-13 14:28:52.275
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit [471]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit.archive 4 0 2015-10-13 14:28:52.278
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.archive [472]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit.http.apache 4 0 2015-10-13 14:28:52.286
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.http.apache [526]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.nls; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.nls; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jgit.pgm 4 0 2015-10-13 14:28:52.289
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.pgm [527]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.api; version="[4.1.0,4.2.0)"
+    -> Export-Package: org.eclipse.jgit.api; bundle-version="4.1.0.201509280440-r"; bundle-symbolic-name="org.eclipse.jgit"; version="4.1.0"; uses:="org.eclipse.jgit.revwalk,  org.eclipse.jgit.treewalk.filter,  org.eclipse.jgit.diff,  org.eclipse.jgit.util,  org.eclipse.jgit.notes,  org.eclipse.jgit.dircache,  org.eclipse.jgit.api.errors,  org.eclipse.jgit.lib,  org.eclipse.jgit.treewalk,  org.eclipse.jgit.blame,  org.eclipse.jgit.submodule,  org.eclipse.jgit.transport,  org.eclipse.jgit.merge"
+       org.eclipse.jgit [471]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2015-10-13 14:28:56.593
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
