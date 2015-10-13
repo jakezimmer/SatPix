@@ -1,14 +1,13 @@
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class SatPix {
 
 	public static void main(String[] args) throws IOException
 	{
 		boolean[][] booleanArr = fileToBoolArray("satpix.in");
-		int sizeOfLargestPasture;
-		
-		/* YOUR CODE GOES HERE */
+		//asdf
+		int sizeOfLargestPasture = 0;
 		
 		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("satpix.out")));
 		out.println(sizeOfLargestPasture);
@@ -17,13 +16,13 @@ public class SatPix {
 	
 	private static boolean[][] fileToBoolArray(String fileName) throws FileNotFoundException, IOException
 	{
-		Scanner s = new Scanner("satpix.in");
-		int x[][]= new int[s.nextInt()][s.nextInt()];
-		for (int i=0; i<x.length; i++){
-			
-		}
+		Scanner scan = new Scanner("satpix.in");
+		int r = scan.nextInt();
+		int c = scan.nextInt();
+		boolean[][] booleanArr = new boolean[r][c];
 		
-		//This helper method converts the input file into a 2D array of booleans
+		//sadf
+		return booleanArr;
 	}
 
 	private static int recursivelyMeasureAndMarkPasture(int row, int col, boolean[][] arr)
