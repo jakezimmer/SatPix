@@ -36,7 +36,11 @@ public class SatPix {
 	{
 		//This recursive method employs the flood-fill algorithm to
 		//count the size of a single pasture and "mark" it so it is not double-counted
-		if(!arr[row][col])
+		if(row >= 0
+			|| col >= 0
+			|| row < arr.length
+			|| col < arr[0].length
+			|| !arr[row][col])
 			return 0;
 		arr[row][col]=false;
 		return 1+
@@ -44,6 +48,25 @@ public class SatPix {
 			recursivelyMeasureAndMarkPasture(row-1, col, arr)+
 			recursivelyMeasureAndMarkPasture(row, col+1, arr)+
 			recursivelyMeasureAndMarkPasture(row, col-1, arr);
+	}
+	
+	public static void floodFill(int[][] arr, int row, int col, int oldColor, int newColor)
+	{
+		
+		if (row >= 0
+				&& col >= 0
+				&& row < arr.length
+				&& col < arr[0].length
+				&& arr[row][col] == oldColor)
+		{
+			arr[row][col] = newColor;
+		
+			floodFill(arr, row - 1, col, oldColor, newColor);
+			floodFill(arr, row + 1, col, oldColor, newColor);
+			floodFill(arr, row, col + 1, oldColor, newColor);
+			floodFill(arr, row, col - 1, oldColor, newColor);
+		}
+		
 	}
 	
 }
