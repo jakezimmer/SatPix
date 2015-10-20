@@ -8,7 +8,7 @@ public class SatPix {
 		boolean[][] booleanArr = fileToBoolArray("satpix.in");
 		int sizeOfLargestPasture = 0;
 		for(int r = 0; r < booleanArr.length; r++)
-			for(int c = 0; c < booleanArr[0].length; c++)
+			for(int c = 1; c < booleanArr[0].length; c+=2)
 				if(booleanArr[r][c]){
 					int size = recursivelyMeasureAndMarkPasture(r, c, booleanArr);
 					if(size>sizeOfLargestPasture)
