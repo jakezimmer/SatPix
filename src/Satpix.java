@@ -6,7 +6,6 @@ public class SatPix {
 	public static void main(String[] args) throws IOException
 	{
 		boolean[][] booleanArr = fileToBoolArray("satpix.in");
-		//asdf
 		int sizeOfLargestPasture = 0;
 		for(int r = 0; r < booleanArr.length; r++)
 			for(int c = 0; c < booleanArr[0].length; c++)
@@ -49,24 +48,4 @@ public class SatPix {
 			recursivelyMeasureAndMarkPasture(row, col+1, arr)+
 			recursivelyMeasureAndMarkPasture(row, col-1, arr);
 	}
-	
-	public static void floodFill(int[][] arr, int row, int col, int oldColor, int newColor)
-	{
-		
-		if (row >= 0
-				&& col >= 0
-				&& row < arr.length
-				&& col < arr[0].length
-				&& arr[row][col] == oldColor)
-		{
-			arr[row][col] = newColor;
-		
-			floodFill(arr, row - 1, col, oldColor, newColor);
-			floodFill(arr, row + 1, col, oldColor, newColor);
-			floodFill(arr, row, col + 1, oldColor, newColor);
-			floodFill(arr, row, col - 1, oldColor, newColor);
-		}
-		
-	}
-	
 }
