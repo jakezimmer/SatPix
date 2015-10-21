@@ -16,7 +16,7 @@ public class SatPix {
 				}
 		
 		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("satpix.out")));
-		out.println(sizeOfLargestPasture);
+		System.out.println(sizeOfLargestPasture);
 		out.close();
 		}
 	
@@ -26,12 +26,25 @@ public class SatPix {
 		int r, c;
 		File f = new File(PATH);
 		Scanner scan = new Scanner(f);
-		//assert scan.hasNextInt();
+		assert scan.hasNextInt();
 			r = scan.nextInt();
-		//assert scan.hasNextInt();
+		assert scan.hasNextInt();
 			c = scan.nextInt();
 		
 		boolean[][] booleanArr = new boolean[r][c];
+		//System.out.print();
+		scan.nextLine();
+		String cL = new String();
+		for (int i=0; i<r && scan.hasNextLine(); i++){
+			cL = scan.nextLine();
+			System.out.println(cL);
+			for (int j=0; j<c; j++){
+				if ( cL.charAt(j)==('*'))
+					booleanArr[i][j]=true;
+				else 
+					booleanArr[i][j]=false;
+			}
+		}
 		scan.close();
 		return booleanArr;
 		
