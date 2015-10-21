@@ -8,7 +8,7 @@ public class SatPix {
 		boolean[][] booleanArr = fileToBoolArray("satpix.in");
 		int sizeOfLargestPasture = 0;
 		for(int r = 0; r < booleanArr.length; r++)
-			for(int c = 1; c < booleanArr[0].length; c+=2)
+			for(int c = r%2; c < booleanArr[0].length; c+=2)
 				if(booleanArr[r][c]){
 					int size = recursivelyMeasureAndMarkPasture(r, c, booleanArr);
 					if(size>sizeOfLargestPasture)
@@ -21,11 +21,15 @@ public class SatPix {
 		}
 	
 	private static boolean[][] fileToBoolArray(String fileName) throws FileNotFoundException, IOException
-	{
-		Scanner scan = new Scanner("satpix.in");
-		assert scan.hasNextInt();
-		int r = scan.nextInt();
-		int c = scan.nextInt();
+	{	
+		String PATH = "satpix.in";
+		int r, c;
+		Scanner scan = new Scanner(PATH);
+		//if (scan.hasNextInt())
+			r = scan.nextInt();
+		//if (scan.hasNextInt())
+			c = scan.nextInt();
+		
 		boolean[][] booleanArr = new boolean[r][c];
 		
 		return booleanArr;
