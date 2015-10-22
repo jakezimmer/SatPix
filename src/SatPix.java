@@ -22,17 +22,12 @@ public class SatPix {
 	
 	private static boolean[][] fileToBoolArray(String fileName) throws FileNotFoundException, IOException
 	{	
-		String PATH = "satpix.in";
-		int r, c;
-		File f = new File(PATH);
-		Scanner scan = new Scanner(f);
-		assert scan.hasNextInt();
-			r = scan.nextInt();
-		assert scan.hasNextInt();
-			c = scan.nextInt();
+		Scanner scan = new Scanner(new File(fileName));
+		int r = scan.nextInt();
+		int c = scan.nextInt();
 		
 		boolean[][] booleanArr = new boolean[r][c];
-		//System.out.print();
+		
 		scan.nextLine();
 		String cL = new String();
 		for (int i=0; i<r && scan.hasNextLine(); i++){
